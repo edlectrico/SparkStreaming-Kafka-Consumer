@@ -11,6 +11,7 @@ if 'SPARK_HOME' not in os.environ:
     os.environ['SPARK_HOME'] = '/home/ubuntu/spark-2.2.0-bin-hadoop2.7'
 
 conf = SparkConf().setAppName('pubmed_open_access').setMaster('local[32]')
+conf.set("es.index.auto.create", "true");
 sc = SparkContext(conf=conf)
 
 if __name__ == '__main__':
