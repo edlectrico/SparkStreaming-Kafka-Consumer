@@ -6,7 +6,7 @@ The python-spark-streaming-consumer Python class basically reads from the 'ping'
 ## Run the Spark Streaming Job:
 Open a new terminal and type the following:
 ```
-./<SPARK_PATH>/bin/spark-submit
+<SPARK_PATH>/bin/spark-submit
     --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.2.0
     <PATH_TO_REPO>/SparkStreaming-Kafka-Consumer/python-spark-streaming-consumer.py
 ```
